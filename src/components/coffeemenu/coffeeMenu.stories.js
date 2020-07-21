@@ -1,5 +1,5 @@
 import "./coffeeMenu.css";
-import quantitySelector from "./coffeeMenu.html";
+import coffeeMenu from "./coffeeMenu.html";
 
 export default { title: "Coffee Menu" };
 
