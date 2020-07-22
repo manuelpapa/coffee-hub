@@ -6,4 +6,12 @@
   padding: 16px 54px;
   border-style: none;
   box-shadow: 0 20px 40px #cf977570;
+  opacity: 1;
+  transition: all 5s;
+}
+
+btn.hover {
+  opacity: 1;
+  transition: all 5s;
+  background-color: violet;
 }
