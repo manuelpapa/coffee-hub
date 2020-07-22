@@ -1,0 +1,30 @@
+.body {
+  background-color: #faf4ee;
+}
+
+.drinkMenu {
+  background-color: #faf4ee;
+}
+
+.drinks {
+  font-family: "Sen", sans-serif;
+  color: #2d140d;
+  display: flex;
+  width: 400px;
+  list-style: none;
+}
+.drinkSymbol {
+}
+
+.drinkStyle {
+  width: 200px;
+  flex-shrink: 500px;
+}
+.drinkArrow {
+  align-self: center;
+}
+.drinks > li {
+  font-size: 2vw;
+  padding: 1em;
+  font-weight: 500;
+}
