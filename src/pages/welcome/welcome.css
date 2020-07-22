@@ -1,3 +1,14 @@
-.class {
-  background-color: chartreuse;
+/*.body {
+  background-color: chocolate;
+  background-image: url("../../assets/bg.png");
+}
+*/
+
+body {
+  background-image: url("../../assets/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
 }
