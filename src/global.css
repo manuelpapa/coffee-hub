@@ -18,6 +18,10 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
   font-family: "Sen", sans-serif;
+  margin: 0;
+}
+
+.fullWidth {
+  width: 100vw;
 }
