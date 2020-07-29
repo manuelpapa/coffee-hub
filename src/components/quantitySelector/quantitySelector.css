@@ -3,7 +3,7 @@
   align-items: stretch;
 }
 
-.counter {
+.quantitySelector > div {
   font-size: 1.1rem;
   color: #2d140d;
   padding: 4px 14px;
@@ -16,7 +16,7 @@
   background: #cf9775;
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 5px 15px;
+  padding: 5px 10px;
   border: none;
   display: flex;
   align-items: center;
@@ -33,12 +33,12 @@
   padding-right: 12px;
 }
 
-.quantitySelector__minus:disabled,
-.quantitySelector__plus:disabled {
-  background: #bbbbbb;
-  cursor: auto;
-}
-
 .quantitySelector > button > svg {
   fill: #fff;
+}
+
+.quantitySelector__minus:disabled,
+.quantitySelector__plus:disabled {
+  background: grey;
+  cursor: auto;
 }

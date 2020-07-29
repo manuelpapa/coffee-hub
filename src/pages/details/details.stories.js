@@ -1,28 +1,45 @@
-import { useEffect } from "@storybook/client-api";
+// import "./details.css";
+// import { createElement } from "../../utils/elements";
+// import { coffeeSelector } from "../../components/quantitySelector/quantitySelector.stories";
+// import macchiatoSrc from "../../assets/macchiato.svg";
 
-export default {
-  title: "Pages/Details",
-};
+// export default {
+//   title: "Pages/Details",
+// };
+
+// export const basic = () => {
+//   const main = createElement("main", {
+//     className: "details",
+//   });
+//   //creations
+//   const header = createElement("div", {
+//     className: "details__header",
+//   });
+
+//   const coffeeTitle = createElement("h2", {
+//     className: "details__title",
+//     innerText: "Macchiato",
+//   });
+//   const macchiatoImage = createElement("img", {
+//     src: macchiatoSrc,
+//     alt: "picture of a macchiato in venti with sugar",
+//   });
+
+//   const quantitySelector = coffeeSelector();
+
+//   //relationship
+//   main.append(header);
+//   main.append(coffeeTitle);
+//   main.append(quantitySelector);
+//   header.append(macchiatoImage);
+//   return main;
+// };
+
+import { createDetailsPage } from "./details";
+
+export default { title: "Pages/Details" };
 
 export const basic = () => {
-  useEffect(() => {
-    const button = document.querySelector(".btn");
-
-    button.addEventListener("click", () => {
-      alert(button.innerHTML);
-      button.innerHTML = "after I clicked";
-    });
-  });
-
-  return '<button class="btn">change your mind</button>';
+  const detailsPage = createDetailsPage();
+  return detailsPage;
 };
-
-//internal alert function
-
-/*let message = "Hello fishy";
-message = "yo fishy 🐟";
-
-
-/*const numberOfStudents = 15;
-const message = `Hello ${numberOfStudents} fishes`;
-alert(message);*/
