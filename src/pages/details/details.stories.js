@@ -1,28 +1,14 @@
-import { useEffect } from "@storybook/client-api";
+import { createButton } from "../../components/button/button";
 
-export default {
-  title: "Pages/Details",
-};
+export default { title: "Pages/Details" };
 
 export const basic = () => {
-  useEffect(() => {
-    const button = document.querySelector(".btn");
+  const main = document.createElement("main");
 
-    button.addEventListener("click", () => {
-      alert(button.innerHTML);
-      button.innerHTML = "after I clicked";
-    });
-  });
+  // const quantitySelector = createQuantitySelector();
+  // main.append(quantitySelector);
+  const button = createButton("Add to cart");
+  main.append(button);
 
-  return '<button class="btn">change your mind</button>';
+  return main;
 };
-
-//internal alert function
-
-/*let message = "Hello fishy";
-message = "yo fishy 🐟";
-
-
-/*const numberOfStudents = 15;
-const message = `Hello ${numberOfStudents} fishes`;
-alert(message);*/
