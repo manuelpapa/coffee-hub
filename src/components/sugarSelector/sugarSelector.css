@@ -1,0 +1,29 @@
+.sugar input {
+  display: none;
+}
+
+.sugar img {
+  filter: opacity(0.2);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.sugar input:checked ~ img {
+  filter: none;
+}
+
+.sugar__zero {
+  height: 19px;
+}
+
+.sugar__one {
+  height: 17px;
+}
+
+.sugar__two {
+  height: 17px;
+}
+
+.sugar__three {
+  height: 40px;
+}

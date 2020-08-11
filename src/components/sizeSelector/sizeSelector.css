@@ -5,7 +5,7 @@
 .size img {
   filter: opacity(0.2);
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .size input:checked ~ img {

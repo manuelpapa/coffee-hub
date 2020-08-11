@@ -4,6 +4,7 @@ import { createButton } from "../../components/button/button";
 import { createQuantitySelector } from "../../components/quantitySelector/quantitySelector";
 import { createElement } from "../../utils/elements";
 import { createSizeSelector } from "../../components/sizeSelector/sizeSelector";
+import { createSugarSelector } from "../../components/sugarSelector/sugarSelector";
 
 const createForm = () => {
   const coffeeName = createElement("div", { innerText: "Macchiato" });
@@ -15,8 +16,12 @@ const createForm = () => {
   coffeeSize.append(size);
 
   const coffeeSugar = createElement("label", { innerText: "Sugar" });
-  const sugar = createElement("input", { name: "sugar" });
+  const sugar = createSugarSelector();
   coffeeSugar.append(sugar);
+
+  // const coffeeSugar = createElement("label", { innerText: "Sugar" });
+  // const sugar = createElement("input", { name: "sugar" });
+  // coffeeSugar.append(sugar);
 
   const quantitySelector = createQuantitySelector();
   const button = createButton("Add to cart");
